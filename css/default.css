@@ -1,0 +1,113 @@
+body { min-width: 1490px; }
+body p { color: #1E1B1D; font-family: Helvetica,Arial,sans-serif; font-size: 0.8em; line-height: 1.25; text-align: center; vertical-align: top;}
+.column { width: 505px; float: left; padding-bottom: 10px; }
+.portlet { margin: 0 1em 1em 0; }
+.portlet-header { margin: 0.3em; padding-bottom: 4px; padding-left: 0.4em; }
+.portlet-header .ui-icon { float: right; }
+.portlet-content { padding: 0.4em; }
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+.ui-sortable-placeholder * { visibility: hidden; }
+#tabs.ui-tabs { position: absolute;}
+.ui-widget { font-size: 0.8em;}
+form.cmxform label.desc { width: 180px; line-height: 2.25em;}
+form.cmxform label.actdesc { width: 150px; line-height: 1.25em;}
+form.cmxform label.ktdesc { width: 300px; line-height: 1.25em; height: 35px; vertical-align: top;}
+form.cmxform input.ktdesc { height: 16px; width: 135px; border: 1px solid #BCBBBB; border-radius: 7px; color: #000000; font-size: 12px; outline: medium none; padding: 5px;}
+form.cmxform textarea.ktdesc { height: 45px; width: 135px; border: 1px solid #BCBBBB; border-radius: 7px; color: #000000; font-size: 12px; outline: medium none; padding: 5px;}
+form.cmxform input.submit { margin-left: 25px; width: auto;}
+form.cmxform label { display: inline-block; vertical-align: middle;}
+form.cmxform label.error {background:url("css/humanity/images/ui-icons_f35f07_256x240.png") no-repeat -32px -192px; height: 16px; width: 16px;}
+form.cmxform input.error{ border: 1px red solid;}
+form.cmxform .gray * { color: #808080;}
+form.cmxform .input, form.cmxform select { height: 16px; width: 220px; border: 1px solid #BCBBBB; border-radius: 7px; color: #000000; font-size: 12px; outline: medium none; padding: 5px;}
+form.cmxform .input-clear { color: #808080; font-size: 0.75em;}
+form.cmxform input.readonly {background-color: #e0e0e0;}
+form.cmxform select { height: 28px; width: 232px;}
+form.cmxform .actbox {float: left; margin-left: 10px; margin-right: 10px; width: 200px;}
+form.cmxform .actbox:first-child {border-right: 1px solid #808080;}
+form.cmxform .originalDisplayInfo { text-align: right; color: #808080; font-size: 0.8em;}
+form.cmxform .warningDisplayInfo { color: #FFA07A;}
+form.cmxform #activity label.error { display: none; background: none; color: #f35f07; font-weight: bold;}
+form.cmxform #fitness_topics label.error { display: none; background: none; color: #f35f07; font-weight: bold;}
+form.cmxform #pfitness_topics label.error { display: none; background: none; color: #f35f07; font-weight: bold;}
+form.cmxform #aefitness_topics label.error { display: none; background: none; color: #f35f07; font-weight: bold;}
+form.cmxform #paefitness_topics label.error { display: none; background: none; color: #f35f07; font-weight: bold;}
+form.cmxform .comment { width: 445px;}
+form.cmxform #konto { font-size: 1em; text-align: left;}
+
+
+form.jtable-dialog-form span.jtable-input-label {
+    display: inline-block;
+	font-weight: bold;
+	color: #666;
+    font-size: 1.1em;
+    padding: 4px 3px;
+	width: 150px;
+	vertical-align: top;
+}
+form.jtable-dialog-form span.jtable-input {
+    padding: 2px;
+}
+form.jtable-dialog-form span.jtable-text-input {
+}
+form.jtable-dialog-form span.jtable-text-input input, form.jtable-dialog-form span.jtable-option-text-clickable select{
+    width: 270px;
+}
+form.jtable-dialog-form span.jtable-textarea-input textarea {
+    min-height: 72px;
+    width: 270px;
+}
+
+form.jtable-dialog-form span.jtable-text-input input.small, form.jtable-dialog-form span.jtable-option-text-clickable select.small{
+    width: 240px;
+}
+
+div.jtable-main-container table.jtable tbody > tr.jtable-row-even{
+	background: url("http://www.tide.ti.com/clab/BDB/css/humanity/images/ui-bg_highlight-hard_100_e3dad0_1x100.png") repeat-x scroll 50% bottom RGB(227,218,208);
+}
+div.jtable-main-container table.jtable tbody > tr > td {
+    border: 1px solid #bbb;
+}
+div.jtable-main-container .jtable-page-number-active{
+	background: url("http://www.tide.ti.com/clab/BDB/css/humanity/images/ui-bg_highlight-hard_100_e3dad0_1x100.png") repeat-x scroll 50% 50% #e8dbc1;
+}
+div.jtable-main-container table.jtable tbody > tr.hover{
+	background: url("http://www.tide.ti.com/clab/BDB/css/humanity/images/ui-bg_glass_65_afd652_1x400.png") repeat-x scroll 50% bottom rgb(227, 218, 208);
+}
+#jquery-color-picker ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	+zoom: 1;
+}
+
+#jquery-color-picker ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+#jquery-color-picker ul li {
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+#jquery-color-picker ul li a {
+	display: block;
+
+	width: 13px;
+	height: 13px;
+
+	text-decoration: none;
+	text-indent: -100000px;
+	outline: 0;
+
+	border: 1px solid #aaa;
+}
+
+#jquery-color-picker ul li a:hover {
+	border-color: #000;
+}

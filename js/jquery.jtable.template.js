@@ -7,6 +7,8 @@
 	// copy the ori to another method name
 	$.hik.jtable.prototype._showAddRecordFormOri = $.hik.jtable.prototype._showAddRecordForm;
 	$.hik.jtable.prototype._showEditFormOri = $.hik.jtable.prototype._showEditForm;
+	$.hik.jtable.prototype._createInputLabelForRecordFieldOri = $.hik.jtable.prototype._createInputLabelForRecordField;
+	
 	//extension members
 	$.extend(true, $.hik.jtable.prototype, {
 	
@@ -109,8 +111,22 @@
 			self._$editDiv.append($editForm).dialog('open');
 			self._trigger("formCreated", null, { form: $editForm, formType: 'edit', record: record, row: $tableRow });
 		},
-		downloadOptions: function (data){
+		
+		/*downloadOptions: function (data){
 			this._downloadOptions(data.fieldName, data.url)
-		}
+		},*/
+		
+		/* Creates label for an input element.
+        *************************************************************************/
+        _createInputLabelForRecordField: function (fieldName) {
+            //TODO: May create label tag instead of a div.
+			$label = $('<label />')
+					.attr({"for": "Edit-" + fieldName, "title": this.options.fields[fieldName].tooltip})
+					.tooltip({ tooltipClass: "jtable-tooltip", content: function(){return $(this).prop('title');} })
+					.html(this.options.fields[fieldName].inputTitle || this.options.fields[fieldName].title);
+            return $('<div />')
+				.append($label)
+                .addClass('jtable-input-label');
+        },
 	});
 })(jQuery);

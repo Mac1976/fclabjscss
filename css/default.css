@@ -1,0 +1,109 @@
+body { min-width: 1490px; }
+body p { color: #1E1B1D; font-family: Helvetica,Arial,sans-serif; font-size: 0.8em; line-height: 1.25; text-align: center; vertical-align: top;}
+.column { width: 505px; float: left; padding-bottom: 10px; }
+.portlet { margin: 0 1em 1em 0; }
+.portlet-header { margin: 0.3em; padding-bottom: 4px; padding-left: 0.4em; }
+.portlet-header .ui-icon { float: right; }
+.portlet-content { padding: 0.4em; }
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+.ui-sortable-placeholder * { visibility: hidden; }
+#tabs.ui-tabs { position: absolute;}
+.ui-widget { font-size: 0.8em;}
+
+form.jtable-dialog-form span.jtable-input-label {
+    display: inline-block;
+	font-weight: bold;
+	color: #666;
+    font-size: 1.1em;
+    padding: 4px 3px;
+	width: 150px;
+	vertical-align: top;
+}
+form.jtable-dialog-form span.jtable-input {
+    padding: 2px;
+}
+form.jtable-dialog-form span.jtable-text-input {
+}
+form.jtable-dialog-form span.jtable-text-input input, form.jtable-dialog-form span.jtable-option-text-clickable select{
+    width: 270px;
+}
+form.jtable-dialog-form span.jtable-textarea-input textarea {
+    min-height: 72px;
+    width: 270px;
+}
+
+form.jtable-dialog-form span.jtable-text-input input.small, form.jtable-dialog-form span.jtable-option-text-clickable select.small{
+    width: 240px;
+}
+
+div.jtable-main-container table.jtable tbody > tr.jtable-row-even{
+	background: url("http://www.tide.ti.com/clab/BDB/css/humanity/images/ui-bg_highlight-hard_100_e3dad0_1x100.png") repeat-x scroll 50% bottom RGB(227,218,208);
+}
+div.jtable-main-container table.jtable tbody > tr > td {
+    border: 1px solid #bbb;
+}
+div.jtable-main-container .jtable-page-number-active{
+	background: url("http://www.tide.ti.com/clab/BDB/css/humanity/images/ui-bg_highlight-hard_100_e3dad0_1x100.png") repeat-x scroll 50% 50% #e8dbc1;
+}
+div.jtable-main-container table.jtable tbody > tr.hover{
+	background: url("http://www.tide.ti.com/clab/BDB/css/humanity/images/ui-bg_glass_65_afd652_1x400.png") repeat-x scroll 50% bottom rgb(227, 218, 208);
+}
+#jquery-color-picker ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	+zoom: 1;
+}
+
+#jquery-color-picker ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+#jquery-color-picker ul li {
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+#jquery-color-picker ul li a {
+	display: block;
+
+	width: 13px;
+	height: 13px;
+
+	text-decoration: none;
+	text-indent: -100000px;
+	outline: 0;
+
+	border: 1px solid #aaa;
+}
+
+#jquery-color-picker ul li a:hover {
+	border-color: #000;
+}
+
+.jtable-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+	white-space: pre;
+}
+
+.ui-button .ui-icon.ui-icon-excel{
+    background-image: url(http://www.tide.ti.com/clab/BDB/images/excel.png);
+    width: 16px;
+    height: 16px; 
+}
+
+.ui-button.ui-state-hover .ui-icon.ui-icon-excel {
+    background-image: url(http://www.tide.ti.com/clab/BDB/images/excel.png);
+    width: 16px;
+    height: 16px; 
+}
